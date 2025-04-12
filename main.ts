@@ -1,5 +1,4 @@
 scene.setBackgroundColor(7)
-
 let finishLine = sprites.create(img`
     ..................................................
     ..................................................
@@ -52,7 +51,7 @@ let finishLine = sprites.create(img`
     ..................................................
     ..................................................
     `, SpriteKind.Player)
-finishLine.setPosition(75, 25)
+finishLine.setPosition(74, 27)
 let person = sprites.create(img`
     . . . . . . . 5 5 . . . . . . . 
     . . . . . f 5 5 5 5 f . . . . . 
@@ -72,7 +71,7 @@ let person = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     `, SpriteKind.Player)
 person.setStayInScreen(true)
-controller.moveSprite(person)
+controller.moveSprite(person, 5, 5)
 person.setPosition(74, 87)
 let puppet = sprites.create(assets.image`Puppet`, SpriteKind.Enemy)
-puppet.setPosition(76, 15)
+puppet.setPosition(76, 25)
